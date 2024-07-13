@@ -4,12 +4,14 @@ namespace CardgameRoguelike;
 
 public sealed class EventSystemSingleton
 {
+    public delegate void DamageDealtEvent();
+
     private static readonly EventSystemSingleton instance = null;
     private static readonly object               padlock  = new();
 
     private EventSystemSingleton() { }
 
-    public EventSystemSingleton Instance
+    public static EventSystemSingleton Instance
     {
         get
         {
@@ -19,4 +21,6 @@ public sealed class EventSystemSingleton
             }
         }
     }
+
+    public event DamageDealtEvent DamageDealt;
 }

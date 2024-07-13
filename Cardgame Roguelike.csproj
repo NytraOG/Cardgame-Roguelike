@@ -6,4 +6,9 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <RootNamespace>CardgameRoguelike</RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Cards\" />
+    <Folder Include="Enemies\" />
+    <Folder Include="UI\" />
+  </ItemGroup>
 </Project>
