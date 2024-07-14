@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Cardgame Roguelike"
-config/features=PackedStringArray("4.2", "Forward Plus")
+config/features=PackedStringArray("4.2", "C#", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="ignore"
 
 [dotnet]
 
